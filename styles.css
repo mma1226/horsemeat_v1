@@ -1,0 +1,114 @@
+@font-face {
+    font-family: "FT-88";
+    src: url('assets/FT88-Gothique.woff') format('woff');
+    src: url('assets/FT88-Gothique.woff2') format('woff2');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face{
+    font-family: "HelveticaNeue";
+    src: url('assets/HelveticaNeue-UltraLight.otf') format('otf');
+}
+
+body{
+    background-color: black;
+    font-size: 4vh;
+    cursor:none;
+    width:100vw;
+    height:100vh;
+    position:fixed;
+}
+
+#lightSaber{
+    position: fixed;
+    transform: translate(-50%, -50%);
+    width: 15px;
+    height: 15px;
+    background: #ffffff;
+    border-radius: 50%;
+    /* filter: blur(5.5px); */
+    z-index:5;
+/* target certain properties for events in js */
+    transition: width 300ms, height 300ms, filter 500ms; 
+    pointer-events: none;
+    mix-blend-mode:exclusion;
+}
+
+
+
+
+.blueText{
+    position: absolute;
+    left: 30.5%;
+    top: 22.4%;
+    font-family: 'FT-88';
+    font-style: normal;
+    font-weight: 400;
+    padding:0px;
+    display: inline-block;
+    font-size: 4.6em;
+    width:39.1%;
+    height:55.1%;
+    color:rgb(55, 0, 255);
+    /* mix-blend-mode:exclusion; */
+    }
+
+    .row1{
+        width:100%;
+        display:flex;
+        /* height:30%; */
+        /* position:absolute; */
+        /* top:0; */
+    }
+    
+    .row2{
+        width:100%;
+        display:flex;
+        /* position:absolute; */
+        /* top:28%; */
+    }
+
+    .row3{
+        width:100%;
+        display: flex;
+        /* top:56%; */
+        /* position:absolute; */
+    }
+
+    .firstLetter{
+        /* position:absolute; */
+        left:0%;
+    }
+    .secondLetter{
+        /* position:absolute; */
+        left:11.5%;
+    }
+    .thirdLetter{
+        /* position:absolute; */
+        left: 23%;
+    }
+
+    .fourthLetter{
+        /* position:absolute; */
+        left:33.5%;
+    }
+
+    .fifthLetter{
+        /* position:absolute; */
+        left:44%;
+        z-index:-2;
+    }
+
+
+.discoBall{
+    border-radius:50%;
+    width: 0.8em;
+    height: 0.8em;
+    left: 45%;
+    top: 10%;
+    z-index: 1;
+    /* transform: translate(-50%, -50%); */
+    transition: 300ms;
+    
+}
